@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nishant K | IT Support & Networking Professional</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+.gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+
+/* Hover Transitions */
+.hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; border: 2px solid transparent; }
+.hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-color: #0d9488; }
+
+/* Scroll Animations */
+.animate-on-scroll { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+.animate-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+
+/* Staggered delays for grid items */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+
+/* Typing Effect for Hero Subtitle */
+.typing-container { display: inline-block; }
+.typing-text {
+overflow: hidden;
+white-space: nowrap;
+border-right: 3px solid #2dd4bf;
+width: 0;
+animation: typing 3s steps(50, end) forwards, blink 0.75s step-end infinite;
+}
+@keyframes typing { from { width: 0 } to { width: 100% } }
+@keyframes blink { 50% { border-color: transparent } }
+
+/* Infinite Scrolling Tech Ticker */
+.ticker-wrap { width: 100%; overflow: hidden; background-color: #134e4a; border-top: 2px solid #0f766e; border-bottom: 2px solid #0f766e; }
+.ticker { display: inline-flex; white-space: nowrap; animation: ticker-scroll 25s linear infinite; }
+.ticker-item { padding: 12px 2rem; font-weight: 600; color: #ccfbf1; font-size: 0.9rem; letter-spacing: 1px; display: flex; items-center; gap: 8px; }
+@keyframes ticker-scroll {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+</style>
+</head>
+<body class="bg-slate-50 text-slate-900 relative">
+
+<nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
+<div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+<div class="flex items-center gap-4">
+<span class="text-xl font-bold tracking-tighter text-teal-600 hover:text-teal-800 transition-colors cursor-pointer">NISHANT K</span>
+<div class="hidden sm:flex items-center gap-2 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+</span>
+<span class="text-[10px] font-bold text-slate-500 tracking-wider">SYSTEM ONLINE</span>
+</div>
+</div>
+
+<div class="space-x-6 hidden md:block text-sm font-medium">
+<a href="#about" class="hover:text-teal-600 transition-colors">About</a>
+<a href="#skills" class="hover:text-teal-600 transition-colors">Skills</a>
+<a href="#projects" class="hover:text-teal-600 transition-colors">IT Projects</a>
+<a href="#web-dev" class="hover:text-teal-600 transition-colors">Web Dev</a>
+<a href="#experience" class="hover:text-teal-600 transition-colors">Experience</a>
+<a href="#contact" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors shadow-lg hover:shadow-teal-500/30">Contact</a>
+</div>
+</div>
+</nav>
+
+<header class="pt-32 pb-20 gradient-bg text-white relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<div class="absolute top-10 left-10 text-6xl"><i class="fas fa-server animate-pulse"></i></div>
+<div class="absolute bottom-10 right-20 text-6xl"><i class="fas fa-network-wired animate-pulse"></i></div>
+</div>
+
+<div class="max-w-4xl mx-auto px-4 text-center relative z-10 animate-on-scroll is-visible">
+<h1 class="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight">Nishant K</h1>
+<div class="typing-container h-8 mb-8 text-xl text-slate-300 md:text-2xl">
+<div class="typing-text">Instructor & IT Support Technician based in Kerala</div>
+</div>
+<div class="flex justify-center gap-4 flex-wrap mt-4">
+<a href="mailto:nishantkadavath149@gmail.com" class="flex items-center gap-2 bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-500 transition-all transform hover:scale-105 shadow-lg hover:shadow-teal-500/50">
+<i class="fas fa-envelope"></i> Email Me
+</a>
+<a href="#" class="flex items-center gap-2 bg-white/10 border border-white/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-slate-900 transition-all transform hover:scale-105">
+<i class="fas fa-download"></i> Download CV
+</a>
+</div>
+</div>
+</header>
+
+<div class="ticker-wrap shadow-inner">
+<div class="ticker">
+<div class="ticker-item"><i class="fab fa-windows text-teal-300"></i> Windows Server OS</div>
+<div class="ticker-item"><i class="fab fa-linux text-teal-300"></i> Linux Administration</div>
+<div class="ticker-item"><i class="fas fa-network-wired text-teal-300"></i> TCP/IP & Subnetting</div>
+<div class="ticker-item"><i class="fas fa-shield-alt text-teal-300"></i> Incident Resolution</div>
+<div class="ticker-item"><i class="fas fa-code text-teal-300"></i> Python & HTML5</div>
+<div class="ticker-item"><i class="fab fa-android text-teal-300"></i> Android Native Apps</div>
+<div class="ticker-item"><i class="fas fa-robot text-teal-300"></i> Local LLM Development</div>
+<div class="ticker-item"><i class="fas fa-database text-teal-300"></i> MySQL Operations</div>
+<div class="ticker-item"><i class="fab fa-windows text-teal-300"></i> Windows Server OS</div>
+<div class="ticker-item"><i class="fab fa-linux text-teal-300"></i> Linux Administration</div>
+<div class="ticker-item"><i class="fas fa-network-wired text-teal-300"></i> TCP/IP & Subnetting</div>
+<div class="ticker-item"><i class="fas fa-shield-alt text-teal-300"></i> Incident Resolution</div>
+<div class="ticker-item"><i class="fas fa-code text-teal-300"></i> Python & HTML5</div>
+<div class="ticker-item"><i class="fab fa-android text-teal-300"></i> Android Native Apps</div>
+<div class="ticker-item"><i class="fas fa-robot text-teal-300"></i> Local LLM Development</div>
+<div class="ticker-item"><i class="fas fa-database text-teal-300"></i> MySQL Operations</div>
+</div>
+</div>
+
+<section id="about" class="py-20 max-w-4xl mx-auto px-4 animate-on-scroll">
+<div class="flex justify-center mb-8">
+<h2 class="text-3xl font-bold relative pb-3 inline-block">
+Professional Summary
+<span class="absolute bottom-0 left-0 w-full h-1 bg-teal-600 rounded"></span>
+</h2>
+</div>
+<p class="text-lg text-slate-600 leading-relaxed text-center mt-4">
+Detail-oriented IT Support Technician with hands-on experience in hardware troubleshooting, system configuration, and network support.
+Skilled in desktop support, incident resolution, and end-user assistance in IT environments with strong knowledge of TCP/IP, DNS, and DHCP.
+</p>
+</section>
+
+<section id="skills" class="py-20 bg-slate-100 border-y border-slate-200">
+<div class="max-w-6xl mx-auto px-4">
+<div class="flex justify-center mb-12">
+<h2 class="text-3xl font-bold relative pb-3 inline-block">
+Technical Expertise
+<span class="absolute bottom-0 left-0 w-full h-1 bg-teal-600 rounded"></span>
+</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8 mt-4">
+<div class="bg-white p-8 rounded-2xl shadow-sm hover-lift animate-on-scroll delay-100">
+<div class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center mb-6 transition-transform transform hover:rotate-12">
+<i class="fas fa-network-wired text-teal-600 text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Networking</h3>
+<ul class="text-slate-600 space-y-3 text-sm">
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> LAN/WAN Setup & Config</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> TCP/IP, DNS, & DHCP</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> IP Addressing & Subnetting</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> Router & Switch (Basic)</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm hover-lift animate-on-scroll delay-200">
+<div class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center mb-6 transition-transform transform hover:rotate-12">
+<i class="fas fa-tools text-teal-600 text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">IT Systems</h3>
+<ul class="text-slate-600 space-y-3 text-sm">
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> Hardware Installation</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> Windows & Linux OS</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> System Performance Ops</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> Troubleshooting Workflows</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm hover-lift animate-on-scroll delay-300">
+<div class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center mb-6 transition-transform transform hover:rotate-12">
+<i class="fas fa-code text-teal-600 text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Software & Dev</h3>
+<ul class="text-slate-600 space-y-3 text-sm">
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> Python (Basic Scripting)</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> HTML5, CSS, & JS</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> MySQL Database</li>
+<li class="flex items-center gap-2"><i class="fas fa-check-circle text-teal-400"></i> MS Office Suite</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="py-20 max-w-5xl mx-auto px-4">
+<div class="flex justify-center mb-12 animate-on-scroll">
+<h2 class="text-3xl font-bold relative pb-3 inline-block text-center">
+IT Infrastructure Projects
+<span class="absolute bottom-0 left-0 w-full h-1 bg-teal-600 rounded"></span>
+</h2>
+</div>
+
+<div class="grid md:grid-cols-2 gap-6 mt-4">
+<div class="bg-white border border-slate-200 p-6 rounded-xl hover-lift animate-on-scroll delay-100 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-teal-50 rounded-bl-full -z-10"></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2"><i class="fas fa-desktop text-teal-500 mr-2"></i> End-to-End System Setup</h4>
+<p class="text-sm text-slate-600">Successfully completed full system deployments, including complex hardware assembly from scratch, dual-boot OS installation, and baseline system configuration.</p>
+</div>
+
+<div class="bg-white border border-slate-200 p-6 rounded-xl hover-lift animate-on-scroll delay-200 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-teal-50 rounded-bl-full -z-10"></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2"><i class="fas fa-memory text-teal-500 mr-2"></i> Hardware Diagnostics</h4>
+<p class="text-sm text-slate-600">Troubleshot and resolved critical hardware component issues involving RAM, HDD/SSD failures, SMPS voltage irregularities, and complex motherboard faults.</p>
+</div>
+
+<div class="bg-white border border-slate-200 p-6 rounded-xl hover-lift animate-on-scroll delay-100 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-teal-50 rounded-bl-full -z-10"></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2"><i class="fas fa-ethernet text-teal-500 mr-2"></i> LAN Connectivity Deployment</h4>
+<p class="text-sm text-slate-600">Designed and configured dynamic IP addressing structures and secured LAN connectivity, ensuring seamless data communication between multiple systems.</p>
+</div>
+
+<div class="bg-white border border-slate-200 p-6 rounded-xl hover-lift animate-on-scroll delay-200 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-teal-50 rounded-bl-full -z-10"></div>
+<h4 class="text-lg font-bold text-slate-900 mb-2"><i class="fas fa-shield-alt text-teal-500 mr-2"></i> Preventive Maintenance</h4>
+<p class="text-sm text-slate-600">Utilized command-line tools (ping, ipconfig, tracert) for advanced network diagnostics while performing scheduled system updates to drastically reduce operational downtime.</p>
+</div>
+</div>
+</section>
+
+<section id="web-dev" class="py-20 bg-slate-50 border-t border-slate-200">
+<div class="max-w-5xl mx-auto px-4">
+<div class="flex justify-center mb-12 animate-on-scroll">
+<h2 class="text-3xl font-bold relative pb-3 inline-block text-center">
+Web & App Development
+<span class="absolute bottom-0 left-0 w-full h-1 bg-teal-600 rounded"></span>
+</h2>
+</div>
+
+<div class="space-y-6">
+<div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm hover-lift animate-on-scroll flex flex-col md:flex-row gap-6 items-center">
+<div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center shrink-0">
+<i class="fas fa-robot text-blue-600 text-3xl"></i>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+<h4 class="text-xl font-bold text-slate-900">Native Android Local AI Chatbot</h4>
+<span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-bold rounded-full mt-2 md:mt-0">IN DEVELOPMENT</span>
+</div>
+<p class="text-slate-600 text-sm">Developing a self-contained AI chatbot that runs entirely natively on Android devices. Engineered to operate a local LLM without relying on external API keys using Kotlin and Android Studio.</p>
+</div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover-lift animate-on-scroll delay-100">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+<i class="fas fa-book-open text-purple-600 text-xl"></i>
+</div>
+<span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full">LIVE</span>
+</div>
+<h4 class="text-lg font-bold text-slate-900 mb-2">Manjin Maravile Prenayam</h4>
+<p class="text-sm text-slate-600">A dedicated web platform hosting an original Malayalam romantic horror novel, built with a custom UI tailored for immersive reading using HTML, CSS, and JS.</p>
+</div>
+
+<div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover-lift animate-on-scroll delay-200">
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
+<i class="fas fa-heart text-pink-500 text-xl"></i>
+</div>
+<span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full border border-slate-200">PRIVATE</span>
+</div>
+<h4 class="text-lg font-bold text-slate-900 mb-2">Reasons I Love You</h4>
+<p class="text-sm text-slate-600">A personalized, interactive creative website built to feature custom 3D animations, floating graphics, and an integrated audio player for a custom fusion song.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="experience" class="py-20 bg-slate-100 border-t border-slate-200">
+<div class="max-w-4xl mx-auto px-4 animate-on-scroll">
+<div class="flex justify-center mb-12">
+<h2 class="text-3xl font-bold relative pb-3 inline-block">
+Professional Experience
+<span class="absolute bottom-0 left-0 w-full h-1 bg-teal-600 rounded"></span>
+</h2>
+</div>
+<div class="border-l-4 border-teal-600 ml-4 pl-8 space-y-12 mt-4 relative">
+<div class="relative bg-white p-6 rounded-xl shadow-sm hover-lift group">
+<div class="absolute -left-[58px] top-4 w-6 h-6 bg-teal-600 rounded-full border-4 border-slate-100 group-hover:scale-125 transition-transform"></div>
+<h3 class="text-xl font-bold">Instructor - Computer Hardware & Networking</h3>
+<p class="text-teal-600 font-semibold mb-3"><i class="fas fa-map-marker-alt mr-1"></i> Electro Technical Institute, Manjeri | <span class="text-slate-500 font-normal">2024 – Present</span></p>
+<ul class="text-slate-600 space-y-2 text-sm">
+<li class="flex items-start gap-2"><i class="fas fa-caret-right text-teal-400 mt-1"></i> Delivered training aligned with IT support and helpdesk operations, covering hardware, networking, and troubleshooting.</li>
+<li class="flex items-start gap-2"><i class="fas fa-caret-right text-teal-400 mt-1"></i> Guided practical sessions on OS installation, driver updates, and system maintenance.</li>
+<li class="flex items-start gap-2"><i class="fas fa-caret-right text-teal-400 mt-1"></i> Simulated real-world helpdesk environments, including ticket-based issue handling.</li>
+<li class="flex items-start gap-2"><i class="fas fa-caret-right text-teal-400 mt-1"></i> Maintained lab systems and ensured network availability and performance.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20 bg-slate-900 text-white">
+<div class="max-w-4xl mx-auto px-4">
+<div class="flex justify-center mb-12 animate-on-scroll">
+<h2 class="text-3xl font-bold relative pb-3 inline-block">
+Education
+<span class="absolute bottom-0 left-0 w-full h-1 bg-teal-500 rounded"></span>
+</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-8 mt-4">
+<div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-teal-500 transition-colors animate-on-scroll delay-100">
+<div class="flex items-center gap-3 mb-2">
+<i class="fas fa-graduation-cap text-teal-400 text-2xl"></i>
+<h4 class="font-bold text-xl">COPA</h4>
+</div>
+<p class="text-slate-300">Govt. Industrial Training Institute, Areekode</p>
+<p class="text-teal-400 font-medium text-sm mt-2">Graduated 2024</p>
+</div>
+<div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-teal-500 transition-colors animate-on-scroll delay-200">
+<div class="flex items-center gap-3 mb-2">
+<i class="fas fa-school text-teal-400 text-2xl"></i>
+<h4 class="font-bold text-xl">Higher Secondary</h4>
+</div>
+<p class="text-slate-300">GHSS Chullikode</p>
+<p class="text-teal-400 font-medium text-sm mt-2">Graduated 2023</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="py-24 text-center bg-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-teal-50 rounded-full blur-3xl -z-10"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-slate-100 rounded-full blur-3xl -z-10"></div>
+
+<div class="animate-on-scroll">
+<h2 class="text-4xl font-extrabold mb-4 text-slate-900">Let's Connect</h2>
+<p class="text-slate-600 mb-10 max-w-lg mx-auto">Currently available for IT Support, Networking, and Systems Administration roles.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6 items-center">
+<a href="tel:8078081610" class="flex items-center gap-3 text-lg text-slate-700 font-medium hover:text-teal-600 transition-colors group">
+<div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center group-hover:bg-teal-100 transition-colors"><i class="fas fa-phone text-teal-600"></i></div>
+8078081610
+</a>
+<div class="flex items-center gap-3 text-lg text-slate-700 font-medium">
+<div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center"><i class="fas fa-map-marker-alt text-teal-600"></i></div>
+Kerala, India
+</div>
+</div>
+</div>
+</section>
+
+<a href="mailto:nishantkadavath149@gmail.com" class="fixed bottom-6 right-6 bg-teal-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-teal-500 hover:scale-110 hover:shadow-teal-500/50 transition-all z-50 group">
+<i class="fas fa-paper-plane text-xl group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"></i>
+</a>
+
+<footer class="py-8 border-t border-slate-200 text-center text-slate-500 text-sm bg-slate-50">
+© 2026 Nishant K. Designed for performance and reliability.
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const observerOptions = {
+root: null,
+rootMargin: '0px',
+threshold: 0.15
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('is-visible');
+observer.unobserve(entry.target);
+}
+});
+}, observerOptions);
+
+const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+elementsToAnimate.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
